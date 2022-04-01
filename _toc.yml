@@ -1,0 +1,8 @@
+# In _toc.yml
+format: jb-book
+root: root
+parts:
+  - caption: Part 1
+    chapters:
+    - file: part01/chapter1
+#    - file: path/to/part1/chapter2

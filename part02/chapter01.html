@@ -92,7 +92,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Warm-up
+  Part 1 - Warm-up
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -109,7 +109,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  For Practitioners
+  Part 2 - For Practitioners
  </span>
 </p>
 <ul class="current nav bd-sidenav">
@@ -213,6 +213,26 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#when">
+   When
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#where">
+   Where
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#who">
+   Who
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#to-whom">
+   To Whom
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#how">
    How
   </a>
@@ -235,6 +255,18 @@
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#decide-how-you-will-analyze-and-present-the-survey-questionnaire-results">
      Decide how you will analyze and present the survey/questionnaire results
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example">
+   Example
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#survey-questions">
+     Survey questions
     </a>
    </li>
   </ul>
@@ -265,6 +297,22 @@ want to know if we actually did it. That is why we evaluate learning.</p>
 interactive digital content, face-to-face session, all-employee-meeting etc), analyze and make a judgement on
 the data.</p>
 </div>
+<div class="section" id="when">
+<h2>When<a class="headerlink" href="#when" title="Permalink to this headline">¶</a></h2>
+<p>Just after the learning (as soon as digital learning completes, on last day of face-to-face program)</p>
+</div>
+<div class="section" id="where">
+<h2>Where<a class="headerlink" href="#where" title="Permalink to this headline">¶</a></h2>
+<p>Your survey system (your LMS, Microsoft Forms or some free web service)</p>
+</div>
+<div class="section" id="who">
+<h2>Who<a class="headerlink" href="#who" title="Permalink to this headline">¶</a></h2>
+<p>Your survey system</p>
+</div>
+<div class="section" id="to-whom">
+<h2>To Whom<a class="headerlink" href="#to-whom" title="Permalink to this headline">¶</a></h2>
+<p>The learning participants</p>
+</div>
 <div class="section" id="how">
 <h2>How<a class="headerlink" href="#how" title="Permalink to this headline">¶</a></h2>
 <p>When preparing your learning event/content make sure you decide:</p>
@@ -290,6 +338,129 @@ of 3 or 4 questions would more than suffice.</p>
 </div>
 <div class="section" id="decide-how-you-will-analyze-and-present-the-survey-questionnaire-results">
 <h3>Decide how you will analyze and present the survey/questionnaire results<a class="headerlink" href="#decide-how-you-will-analyze-and-present-the-survey-questionnaire-results" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="survey-questions">
+<h3>Survey questions<a class="headerlink" href="#survey-questions" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>How satisfied are you with this learning?
+1. Extremely satisfied
+2. Satisfied
+3. Not sure
+4. Not satisfied
+5. Not at all satisfied</p></li>
+<li><p>Do you think this learning will help you perform in your role from now on?
+1. Yes, extremely
+2. Yes
+3. Not sure
+4. No
+5. Not at all</p></li>
+<li><p>Do you think you achieve the aims of this learning?
+1. Yes, definitely
+2. Yes
+3. Not sure
+4. No
+5. Not at all</p></li>
+<li><p>Do you think the learning materials were appropriate to help you achieve the learning aims?
+1. Yes, definitely
+2. Yes
+3. Not sure
+4. No
+5. Not at all</p></li>
+<li><p>Do you think the instruction/faciliation was appropriate to help you achieve the learning aims?
+1. Yes, definitely
+2. Yes
+3. Not sure
+4. No
+5. Not at all</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+ 
+<span class="c1"># initialize list of lists</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">]]</span>
+ 
+<span class="c1"># Create the pandas DataFrame</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Satisfaction&#39;</span><span class="p">,</span> <span class="s1">&#39;Value&#39;</span><span class="p">,</span> <span class="s1">&#39;Aim achievement&#39;</span><span class="p">,</span> <span class="s1">&#39;Content quality&#39;</span><span class="p">,</span> <span class="s1">&#39;Instruction quality&#39;</span><span class="p">],</span> 
+                 <span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Participant 1&#39;</span><span class="p">,</span> <span class="s1">&#39;Participant 2&#39;</span><span class="p">,</span> <span class="s1">&#39;Participant 3&#39;</span><span class="p">,</span> <span class="s1">&#39;Participant 4&#39;</span><span class="p">,</span> <span class="s1">&#39;Participant 5&#39;</span><span class="p">])</span>
+<span class="n">df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Satisfaction</th>
+      <th>Value</th>
+      <th>Aim achievement</th>
+      <th>Content quality</th>
+      <th>Instruction quality</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Participant 1</th>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>Participant 2</th>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>Participant 3</th>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>Participant 4</th>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>Participant 5</th>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
 </div>
 </div>
 </div>

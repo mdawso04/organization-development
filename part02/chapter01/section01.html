@@ -210,13 +210,30 @@
         
               <div>
                 
-  <div class="cell tag_hide-input tag_remove-output tag_remove-input docutils container">
+  <div class="cell tag_hide-cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">myst_nb</span> <span class="kn">import</span> <span class="n">glue</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+ 
+<span class="c1"># initialize list of lists</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">]]</span>
+ 
+<span class="c1"># Create the pandas DataFrame</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Satisfaction&#39;</span><span class="p">,</span> <span class="s1">&#39;Value&#39;</span><span class="p">,</span> <span class="s1">&#39;Aim achievement&#39;</span><span class="p">,</span> <span class="s1">&#39;Content quality&#39;</span><span class="p">,</span> <span class="s1">&#39;Instruction quality&#39;</span><span class="p">],</span> 
+                 <span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Participant 1&#39;</span><span class="p">,</span> <span class="s1">&#39;Participant 2&#39;</span><span class="p">,</span> <span class="s1">&#39;Participant 3&#39;</span><span class="p">,</span> <span class="s1">&#39;Participant 4&#39;</span><span class="p">,</span> <span class="s1">&#39;Participant 5&#39;</span><span class="p">])</span>
+
+<span class="n">glue</span><span class="p">(</span><span class="s2">&quot;df&quot;</span><span class="p">,</span> <span class="n">df</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="examples">
 <h1><span class="section-number">2. </span>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h1>
 <div class="tabbed-set docutils">
-<input checked="checked" id="dd434d0c-6020-44ca-9260-c1901e5816c6" name="3b9ce3bc-eef5-4613-8d90-75627e905d5d" type="radio">
-</input><label class="tabbed-label" for="dd434d0c-6020-44ca-9260-c1901e5816c6">
+<input checked="checked" id="4a20b4a5-e176-48a9-8106-51300b1ae29b" name="84b571df-be4c-4c3d-bfe3-aa097a3303e3" type="radio">
+</input><label class="tabbed-label" for="4a20b4a5-e176-48a9-8106-51300b1ae29b">
 Sample survey questions</label><div class="tabbed-content docutils">
 <ol class="simple">
 <li><p>How satisfied are you with this learning?
@@ -251,8 +268,8 @@ Sample survey questions</label><div class="tabbed-content docutils">
 5. Not at all</p></li>
 </ol>
 </div>
-<input id="d9176bb7-4781-4cdc-a175-edc2543a3529" name="3b9ce3bc-eef5-4613-8d90-75627e905d5d" type="radio">
-</input><label class="tabbed-label" for="d9176bb7-4781-4cdc-a175-edc2543a3529">
+<input id="77ff29b7-3cb5-4ddc-a807-c09708c48911" name="84b571df-be4c-4c3d-bfe3-aa097a3303e3" type="radio">
+</input><label class="tabbed-label" for="77ff29b7-3cb5-4ddc-a807-c09708c48911">
 Sample survey data</label><div class="tabbed-content docutils">
 <div class="figure align-default" id="some-df">
 <div class="cell_output docutils container">
@@ -328,8 +345,8 @@ Sample survey data</label><div class="tabbed-content docutils">
 <p class="caption"><span class="caption-number">Fig. 2.1 </span><span class="caption-text">This is a <strong>caption</strong></span><a class="headerlink" href="#some-df" title="Permalink to this image">¶</a></p>
 </div>
 </div>
-<input id="ae226aea-2df8-462b-bb6b-31ac5a86821b" name="3b9ce3bc-eef5-4613-8d90-75627e905d5d" type="radio">
-</input><label class="tabbed-label" for="ae226aea-2df8-462b-bb6b-31ac5a86821b">
+<input id="4718ffb9-e9bf-491b-97ba-396f4490108c" name="84b571df-be4c-4c3d-bfe3-aa097a3303e3" type="radio">
+</input><label class="tabbed-label" for="4718ffb9-e9bf-491b-97ba-396f4490108c">
 Code to generate this</label><div class="tabbed-content docutils">
 <p><code class="docutils literal notranslate"><span class="pre">{</span> <span class="pre">code</span> <span class="pre">block</span> <span class="pre">here</span> <span class="pre">}</span></code></p>
 </div>

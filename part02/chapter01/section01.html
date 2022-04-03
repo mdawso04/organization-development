@@ -210,30 +210,11 @@
         
               <div>
                 
-  <div class="cell tag_hide-cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">myst_nb</span> <span class="kn">import</span> <span class="n">glue</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
- 
-<span class="c1"># initialize list of lists</span>
-<span class="n">data</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">]]</span>
- 
-<span class="c1"># Create the pandas DataFrame</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Satisfaction&#39;</span><span class="p">,</span> <span class="s1">&#39;Value&#39;</span><span class="p">,</span> <span class="s1">&#39;Aim achievement&#39;</span><span class="p">,</span> <span class="s1">&#39;Content quality&#39;</span><span class="p">,</span> <span class="s1">&#39;Instruction quality&#39;</span><span class="p">],</span> 
-                 <span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Participant 1&#39;</span><span class="p">,</span> <span class="s1">&#39;Participant 2&#39;</span><span class="p">,</span> <span class="s1">&#39;Participant 3&#39;</span><span class="p">,</span> <span class="s1">&#39;Participant 4&#39;</span><span class="p">,</span> <span class="s1">&#39;Participant 5&#39;</span><span class="p">])</span>
-
-<span class="n">glue</span><span class="p">(</span><span class="s2">&quot;df&quot;</span><span class="p">,</span> <span class="n">df</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-</div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="examples">
+  <div class="tex2jax_ignore mathjax_ignore section" id="examples">
 <h1><span class="section-number">2. </span>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h1>
 <div class="tabbed-set docutils">
-<input checked="checked" id="73d2d923-0d20-4846-bee0-4b3c688f1b0a" name="6aeabed6-7503-4c55-8408-7338a82ec24c" type="radio">
-</input><label class="tabbed-label" for="73d2d923-0d20-4846-bee0-4b3c688f1b0a">
+<input checked="checked" id="c92c6651-cae7-4a04-90c1-d6cd295c1d81" name="c3bcf8dd-0acb-4a99-b032-1b5ed74e87df" type="radio">
+</input><label class="tabbed-label" for="c92c6651-cae7-4a04-90c1-d6cd295c1d81">
 Sample survey questions</label><div class="tabbed-content docutils">
 <ol class="simple">
 <li><p>How satisfied are you with this learning?
@@ -268,8 +249,8 @@ Sample survey questions</label><div class="tabbed-content docutils">
 5. Not at all</p></li>
 </ol>
 </div>
-<input id="e4809256-c2d3-4fbc-a718-6f6f435a8848" name="6aeabed6-7503-4c55-8408-7338a82ec24c" type="radio">
-</input><label class="tabbed-label" for="e4809256-c2d3-4fbc-a718-6f6f435a8848">
+<input id="3ab7180e-e1b7-429f-bd35-aa3b74230579" name="c3bcf8dd-0acb-4a99-b032-1b5ed74e87df" type="radio">
+</input><label class="tabbed-label" for="3ab7180e-e1b7-429f-bd35-aa3b74230579">
 Sample survey data</label><div class="tabbed-content docutils">
 <div class="figure align-default" id="some-df">
 <div class="cell_output docutils container">
@@ -345,6 +326,95 @@ Sample survey data</label><div class="tabbed-content docutils">
 <p class="caption"><span class="caption-number">Fig. 2.1 </span><span class="caption-text">This is a <strong>caption</strong></span><a class="headerlink" href="#some-df" title="Permalink to this image">¶</a></p>
 </div>
 </div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+ 
+<span class="c1"># initialize list of lists</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">]]</span>
+ 
+<span class="c1"># Create the pandas DataFrame</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Satisfaction&#39;</span><span class="p">,</span> <span class="s1">&#39;Value&#39;</span><span class="p">,</span> <span class="s1">&#39;Aim achievement&#39;</span><span class="p">,</span> <span class="s1">&#39;Content quality&#39;</span><span class="p">,</span> <span class="s1">&#39;Instruction quality&#39;</span><span class="p">],</span> 
+                 <span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Participant 1&#39;</span><span class="p">,</span> <span class="s1">&#39;Participant 2&#39;</span><span class="p">,</span> <span class="s1">&#39;Participant 3&#39;</span><span class="p">,</span> <span class="s1">&#39;Participant 4&#39;</span><span class="p">,</span> <span class="s1">&#39;Participant 5&#39;</span><span class="p">])</span>
+
+<span class="n">df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Satisfaction</th>
+      <th>Value</th>
+      <th>Aim achievement</th>
+      <th>Content quality</th>
+      <th>Instruction quality</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Participant 1</th>
+      <td>5</td>
+      <td>3</td>
+      <td>5</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>Participant 2</th>
+      <td>2</td>
+      <td>2</td>
+      <td>5</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>Participant 3</th>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>Participant 4</th>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>Participant 5</th>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
 </div>
 </div>
 

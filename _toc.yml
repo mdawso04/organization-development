@@ -2,7 +2,12 @@
 format: jb-book
 root: root
 parts:
-  - caption: Part 1
+  - caption: Warm-up
     chapters:
-    - file: part01/chapter1
-#    - file: path/to/part1/chapter2
+    - file: part01/chapter01/top
+    - file: part01/chapter02/top
+  - caption: For Practitioners
+    chapters:
+    - file: part02/chapter01/top
+      sections:
+      - file: part02/chapter01/section01

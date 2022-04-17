@@ -3,11 +3,11 @@ format: jb-book
 root: root
 parts:
   - caption: Warm-up
+    numbered: 1
     chapters:
     - file: part01/chapter01/top
     - file: part01/chapter02/top
   - caption: For Practitioners
+    numbered: 1
     chapters:
     - file: part02/chapter01/top
-      sections:
-      - file: part02/chapter01/section01

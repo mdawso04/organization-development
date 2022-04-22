@@ -7,7 +7,7 @@ parts:
     chapters:
     - file: part01/chapter01/top
     - file: part01/chapter02/top
-  - caption: For Practitioners
+  - caption: OD Practice
     numbered: 1
     chapters:
-    - file: part02/chapter01/top
+    - file: od-practice/01-learning-evaluation/top
